@@ -46,7 +46,7 @@ exports.index = function(req, res) {
                   "basics": {
                     "name": "Nikhil Pai",
                     "picture": "",
-                    "email": "nikhilpai2016@u.northwestern.edu",
+                    "email": "nikhil.pai@u.northwestern.edu",
                     "phone": "847-644-8040",
                     "website": "nikhilpi.me",
                     "summary": "",
@@ -56,31 +56,47 @@ exports.index = function(req, res) {
                       "city": "Evanston"
                     },
                     "profiles": [{
-                      "network": "",
-                      "username": "",
-                      "url": ""
+                      "network": "Linkedin",
+                      "username": "nikhilpi",
+                      "url": "http://linkedin.com/in/nikhilpi/"
+                    },
+                    {
+                      "network": "Github",
+                      "username": "nikhilpi",
+                      "url": "https://github.com/nikhilpi"
                     }]
                   },
                   "work": [{
-                    "company": "",
-                    "position": "",
-                    "website": "",
-                    "startDate": "",
+                    "company": "Groupon",
+                    "position": "Homepage Software Developer Intern",
+                    "website": "http://groupon.com",
+                    "startDate": "2014-06-23",
+                    "endDate": "2014-08-29",
+                    "summary": "",
+                    "highlights": [
+                    ""
+                    ]
+                  },
+                  {
+                    "company": "Knight Lab",
+                    "position": "Technology Student Fellow",
+                    "website": "http://knightlab.northwestern.edu/",
+                    "startDate": "2014-07-24",
                     "endDate": "",
                     "summary": "",
                     "highlights": [
                     ""
                     ]
-                  }],
-                  "volunteer": [{
-                    "organization": "",
-                    "position": "",
-                    "website": "",
-                    "startDate": "",
-                    "endDate": "",
+                  },
+                  {
+                    "company": "Spotme Fitness",
+                    "position": "Design Intern",
+                    "website": "https://spotmefit.com/",
+                    "startDate": "2013-05-15",
+                    "endDate": "2013-08-15",
                     "summary": "",
                     "highlights": [
-                      ""
+                    ""
                     ]
                   }],
                   "education": [{
