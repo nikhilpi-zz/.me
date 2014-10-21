@@ -8,3 +8,7 @@ exports.index = function(req, res) {
 		user: req.user || null
 	});
 };
+
+exports.aoapp = function(req, res) {
+  res.render('aocalvin');
+};
