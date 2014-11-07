@@ -9,40 +9,17 @@ var mongoose = require('mongoose'),
 /**
  * Create a Resume
  */
-exports.create = function(req, res) {
 
-};
-
-/**
- * Show the current Resume
- */
-exports.read = function(req, res) {
-
-};
-
-/**
- * Update a Resume
- */
-exports.update = function(req, res) {
-
-};
-
-/**
- * Delete an Resume
- */
-exports.delete = function(req, res) {
-
-};
-
-/**
- * List of Resumes
- */
-exports.list = function(req, res) {
-
-};
 
 exports.index = function(req, res) {
-  var resume = {
+  res.jsonp(resume);
+}; 
+
+exports.basics = function(req,res){
+  res.jsonp(resume.basics);
+};
+
+var resume = {
                   "basics": {
                     "name": "Nikhil Pai",
                     "picture": "",
@@ -53,7 +30,7 @@ exports.index = function(req, res) {
                     "location": {
                       "address": "604 Davis St, Unit 4",
                       "postalCode": "60201",
-                      "city": "Evanston"
+                      "city": "Evanston",
                     },
                     "profiles": [{
                       "network": "Linkedin",
@@ -145,6 +122,3 @@ exports.index = function(req, res) {
                     "reference": ""
                   }]
                 };
-
-  res.jsonp(resume);
-};
