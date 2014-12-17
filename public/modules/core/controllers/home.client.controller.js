@@ -3,7 +3,7 @@
 
 angular.module('core').controller('HomeController', ['$scope',
 	function($scope) {
-		var settings = {
+		$scope.settings = {
         
         // Parallax background effect?
             parallax: true,
@@ -13,7 +13,7 @@ angular.module('core').controller('HomeController', ['$scope',
 
         };
 
-        $scope.skel = skel.init({
+        skel.init({
             reset: 'full',
             containers: '100%',
             breakpoints: {
