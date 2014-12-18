@@ -1,7 +1,7 @@
 'use strict';
 
 
-angular.module('core').controller('HomeController', ['$scope',
+angular.module('core').controller('HomeController', ['$scope','duScroll',
 	function($scope) {
 		$scope.settings = {
         

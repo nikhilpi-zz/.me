@@ -20,8 +20,9 @@ angular.module('core').directive('headerView', [
             }
             else {
               $header.css('background-position', 'left 0px');
-                windowEl.on('scroll.strata_parallax', function() {
+                angular.element($window).bind('scroll', function() {
                   $header.css('background-position', 'left ' + (-1 * (parseInt(windowEl.scrollTop()) / settings.parallaxFactor)) + 'px');
+                  console.log("scroll");
               });
               
             }
