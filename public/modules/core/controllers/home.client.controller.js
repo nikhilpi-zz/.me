@@ -1,7 +1,7 @@
 'use strict';
 
 
-angular.module('core').controller('HomeController', ['$scope','duScroll',
+angular.module('core').controller('HomeController', ['$scope',
 	function($scope) {
 		$scope.settings = {
         
@@ -12,6 +12,9 @@ angular.module('core').controller('HomeController', ['$scope','duScroll',
             parallaxFactor: 20
 
         };
+
+        $scope.projects = [{title:'test 1', subtitle: 'test sub', image:'/modules/core/images/thumbs/01.jpg'},
+                            {title:'test 2', subtitle: 'test sub'}];
 
         skel.init({
             reset: 'full',
